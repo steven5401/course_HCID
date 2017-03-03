@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/qamain"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        >
+        <ListView android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#111"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are You Lost ?"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:gravity="center"
+            android:onClick="openYes"
+            android:layout_marginTop="150dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:gravity="center"
+            android:onClick="openNo"
+            android:layout_marginTop="200dp"/>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

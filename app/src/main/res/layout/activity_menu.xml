@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.toogather.Menu">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#0039e6"/>
+    <Button
+        android:id="@+id/menu_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="back"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/qa_btn"
+            android:text="Q&amp;A"
+            android:textSize="20dp"
+            android:onClick="openQA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keys_btn"
+            android:layout_marginTop="60dp"
+            android:text="Keywords"
+            android:textSize="20dp"
+            android:onClick="openKeywords"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stats_btn"
+            android:layout_marginTop="120dp"
+            android:text="STATS"
+            android:textSize="20dp"
+            android:onClick="openStats"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/course_btn"
+            android:layout_marginTop="380dp"
+            android:text="Course  List"
+            android:textSize="20dp"
+            android:onClick="openCourseList"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

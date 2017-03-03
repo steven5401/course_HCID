@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empathy_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    tools:context="com.example.user.toogather.EmpathyMap">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insights"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:onClick="openKeywords"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="An empathy map is a collaborative tool teams can use to gain a deeper insight into their customers. Much like a user personal, an empathy map can represent a group of users, such as a customer segment. The empathy map was originally created by Dave Gray and has been gaining popularity with the agile community."
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:padding="10dp"/>
+
+</RelativeLayout>

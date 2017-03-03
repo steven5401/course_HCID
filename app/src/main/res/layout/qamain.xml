@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q&amp;A"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="#0039e6"/>
+        <Button
+            android:id="@+id/new_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="+"
+            android:textSize="40dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="onClickBtn"/>
+        <Button
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="menu"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:onClick="openMenu"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/QuestionList"
+            >
+            <Button
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do we have to do the empathy map before or after the HMW?"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:onClick="openReply"/>
+            <Button
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="During a brainstorming, what s the best way to let everyone express his own idea??"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:onClick="openReply"/>
+            <Button
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why do we need to focus on the extreme users during the brainstorimg?"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:onClick="openReply"/>
+            <Button
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many insights do we need to explore? Do we have to do three solutions for each insights?"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:onClick="openReply"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

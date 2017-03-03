@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empathy_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    tools:context="com.example.user.toogather.EmpathyMap"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prototype"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:onClick="openKeywords"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A prototype is an early sample, model or release of a product built to test a concept or process or to act as a thing to be replicated or learned from. It is a term used in variety of contexts, including semantics, design, electronic, and software programming. A protype is generally used to evaluate a new design to enhance precision by system analysis and users.\n
+aPrototype serves to provide specifications for areal, working system rather than a theoretical one. In some design workflow models, creating a prototype (a process called materialization) is the step between formalization and the evaluation of an idea. Engineers and prototyping specialists seek to understand the limitations of prototypes to exactly simulate the characteristics of their intended design.
+It is important to realize that by their very definition, protypes will represent compromise from the final production design."
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:padding="10dp"/>
+    </ScrollView>
+
+
+</LinearLayout>

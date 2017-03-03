@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_course_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.toogather.CourseList">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEEK"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0039e6"/>
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="menu"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:onClick="openMenu"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lost : 25%"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/curveline"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keywords"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="230dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:text="Method for brainstorming"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:text="Needs and Findings"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+</RelativeLayout>

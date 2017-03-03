@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.toogather">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/too_gather"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CourseList" />
+        <activity android:name=".QuestionAnswer"
+            android:launchMode="singleTask"/>
+        <activity android:name=".LostRecord" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Stats" />
+        <activity android:name=".WeekStats" />
+        <activity android:name=".Keywords" />
+        <activity android:name=".EmpathyMap" />
+        <activity android:name=".Insights" />
+        <activity android:name=".HowMightWe" />
+        <activity android:name=".Prototype" />
+        <activity android:name=".NewQ" />
+        <activity android:name=".replyPage"></activity>
+    </application>
+
+</manifest>

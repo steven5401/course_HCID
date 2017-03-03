@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_course_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.toogather.CourseList">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course List"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#0039e6"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <Button
+            android:id="@+id/hcid_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HCID"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.toogather.Stats">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATS"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0039e6"/>
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="menu"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:onClick="openMenu"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openWeek"
+            android:text="this week"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openWeek"
+            android:layout_marginTop="60dp"
+            android:text="week 2"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openWeek"
+            android:layout_marginTop="120dp"
+            android:text="week 1"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>
